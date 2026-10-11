@@ -49,3 +49,9 @@ export type CurrentUserDetails = OnlyKeys<
   'id' | 'isAdmin' | 'mfaRequired' | 'hasTotp'
   | 'hasPasskeys' | 'hasVerifyPasskeys' | 'hasEmail' | 'emailVerified' | 'expiresAt' | 'approved'>
   & UserSessionInfo
+
+export type UserApp = {
+  name: string
+  url: string
+  logo: string
+}
